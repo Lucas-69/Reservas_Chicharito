@@ -1,0 +1,65 @@
+.redes{
+	position: absolute;
+	top: 180%;
+	left: 50%;
+	height: 15%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.redes li{
+	list-style: none;
+}
+
+.redes li a{
+
+	position: relative;
+	width: 70px;
+	height: 70px;
+	display: block;
+	text-align: center;
+	margin: 0 20px;
+	border-radius: 50%;
+	padding: 6px;
+	box-sizing: border-box;
+	text-decoration: none;
+	box-shadow: 0 20px 15px rgba(0,0,0,0.6);
+	background: linear-gradient(0deg,  #ddd, #fff);
+	transition: .5s;
+}
+
+.redes li a:hover{
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5); 
+}
+
+.redes li a .fa{
+
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: linear-gradient(50deg,#fff,#a6acaf);
+	border-radius: 50%;
+	line-height: calc(80px - 17px);
+	font-size: 40px;
+	color: #262626;
+	transition: .5s;
+}
+
+.redes li:nth-child(1) a:hover .fa{
+
+	color:  hsl(5, 69%, 60%); /* ROJO  Google */
+}
+.redes li:nth-child(2) a:hover .fa{
+
+	color: hsl(221, 60%, 55%); /* AZUL  Facebook */
+}
+.redes li:nth-child(3) a:hover .fa{
+
+	color: hsl(319, 63%, 55%); /* VIOLETA-Rosa instagram*/
+}
+.redes li:nth-child(4) a:hover .fa{
+
+	color: hsl(193, 100%, 50%); /* CELESTE - twitter */
+}

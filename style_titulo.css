@@ -1,0 +1,66 @@
+
+/*Este elemento está usando position: relative;.
+ Si estuviera usando position: static;
+ su sucesor con position: asbsolute;
+ escaparía y se posicionaría relativamente al body del documento 
+ http://es.learnlayout.com/position.html*/
+
+ #style_titulo ul{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	padding: 0;
+	display: flex;
+	
+}
+
+#style_titulo ul li{
+
+	list-style: none;
+	color: #484848;
+	font-family: arial;
+	font-size: 400%;
+	letter-spacing: 10px;
+	animation: animate 2.8s linear 1;
+	
+}
+
+
+@Keyframes animate{
+
+	0%{
+		color:   #484848  ; /* Negro */
+		text-shadow: none;
+	}
+	50%{
+		color:  #484848 ;/* negro */
+		text-shadow: none;
+	}
+	60%{
+		color: #f5f200 ;/* AMARILLO */
+		text-shadow: 10px #fdd004,  70px #ff6c00;
+	}
+
+}
+
+ #style_titulo ul li:nth-child(1){	animation-delay: .2s;}
+ #style_titulo ul li:nth-child(2){	animation-delay: .4s;}
+ #style_titulo ul li:nth-child(3){	animation-delay: .6s;}
+ #style_titulo ul li:nth-child(4){	animation-delay: .8s;}
+ #style_titulo ul li:nth-child(5){	animation-delay: 1.0s;}
+ #style_titulo ul li:nth-child(6){	animation-delay: 1.2s;}
+ #style_titulo ul li:nth-child(7){	animation-delay: 1.4s;}
+ #style_titulo ul li:nth-child(8){	animation-delay: 1.6s;}
+ #style_titulo ul li:nth-child(9){	animation-delay: 1.8s;}
+ #style_titulo ul li:nth-child(10){ animation-delay: 2.0s;}
+ #style_titulo ul li:nth-child(11){ animation-delay: 2.2s;}
+ #style_titulo ul li:nth-child(12){ animation-delay: 2.4s;}
+ #style_titulo ul li:nth-child(13){ animation-delay: 2.6s;}
+ #style_titulo ul li:nth-child(14){ animation-delay: 2.8s;}
+ #style_titulo ul li:nth-child(15){ animation-delay: 3.0s;}
+ #style_titulo ul li:nth-child(16){ animation-delay: 3.2s;}
+ #style_titulo ul li:nth-child(17){ animation-delay: 3.4s;}
+ #style_titulo ul li:nth-child(18){ animation-delay: 3.6s;}
+

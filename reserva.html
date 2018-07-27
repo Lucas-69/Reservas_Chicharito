@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head >
+	<title> Reserva </title>
+
+	<link rel="stylesheet" type="text/css " href="style_reserva.css">
+	
+</head>
+
+<body>
+	
+	<div class="form">
+		<img src="imagenes/usuario.png" class="user">	
+
+		<form action="alta.php" method="POST" class="formulario" enctype="multipart/form-data" >
+			
+			<h1 class="formulario_titulo"> Formulario de Reserva </h1>
+
+			<br>
+			<input type="text" class="f_input" name="inpu_dni" maxlength="10" required>
+			<label for="" class="f_label"> DNI </label> <!-- ...type="text" name="nombre" placeholder="Nombre" required>-->		
+			<br>
+
+			<input type="text" class="f_input" name="inpu_nombre" required>
+			<label for="" class="f_label" > Nombre </label>
+			<br>			
+			
+			<input type="text" class="f_input" name="inpu_apellido" required>
+			<label for="" class="f_label" > Apellido </label>
+			<br>	
+
+			<input type="text" class="f_input" name="inpu_cancha" required>
+			<label for="" class="f_label" > Tipo de Cancha </label>
+			
+       		<input class="boton_inicio"  type="submit" value="Listo" />
+
+  		</form>
+		
+			<script src="transition.js"></script>
+
+		<form action="index.php">
+			 <input class="boton_inicio"  type="submit" value="Inicio " />
+		</form>
+
+	</div>
+
+</body>
+</html>
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<head >
+	<title> Reserva </title>
+
+	<link rel="stylesheet" type="text/css " href="estilosformu.css">
+	
+</head>
+
+<body>
+	<div class="form">
+		
+					
+		<form action="alta.php" method="POST" class="formulario" enctype="multipart/form-data" >
+			<h1 class="formulario_titulo"> Formulario de Reserva </h1>
+
+			<br>
+			<input type="text" class="f_input" name="inpu_dni" required>
+			<label for="" class="f_label"> DNI </label> 
+			<br>
+
+			<input type="text" class="f_input" name="inpu_nombre" required>
+			<label for="" class="f_label" > Nombre </label>
+			<br>			
+			
+			<input type="text" class="f_input" name="inpu_apellido" required>
+			<label for="" class="f_label" > Apellido </label>
+			<br>	
+
+			<input type="text" class="f_input" name="inpu_cancha" required>
+			<label for="" class="f_label" > Tipo de Cancha </label>
+			
+       		<input class="boton_inicio" type="submit" value="Listo" />
+  
+		</form>
+		
+			<script src="transition.js"></script>
+		
+		<form action="index.php">
+			 <input class="boton_inicio" type="submit" value="Inicio " />
+		</form>
+
+	</div>
+
+	
+
+</body>
+</html>
+
+-->

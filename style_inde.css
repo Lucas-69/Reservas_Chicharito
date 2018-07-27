@@ -1,0 +1,188 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font:normal medium/1.4 sans-serif;
+	background: url(imagenes/reserva1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position:center;
+
+
+}
+
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid rgba(  40, 34, 19  , 0.2);
+}
+
+tr, td{
+	padding: 5px;
+	border: 1px solid rgba( 40, 34, 19 , 0.2);
+}
+
+/*tr:nth-child(even){
+	background: rgba(   184, 164, 136  ,0.6);
+}*/
+
+thead{
+	border-bottom: solid 5px rgba( 39, 31, 19 , 0.6);
+}
+
+.contenedor{
+	margin: 15px;
+}
+
+.main{
+	padding: 0;
+	margin: 5%;
+	height: 200px;
+}
+
+.icon_center{ 
+	height: 85%;
+	padding: 0;
+	margin: 0;
+}
+
+.icon_center img{ /* TAMAÑO DE LOS ICONOS*/
+	width:12%;
+	height:12%;	
+}
+
+#style_titulo{
+	width: 100%;
+	position: relative;
+	height: 20%;
+}
+
+.centro{ /* Titulos del cuadro */
+	padding: 0.5rem;
+	color: white;
+	text-align: center;
+	font-size: 21px;
+}
+.tab{
+	width: 90%;
+	background: rgba( 126, 110, 87, 0.5);	
+	padding: 25px;
+	margin: 5px auto;
+	border: 1px solid rgba(40, 34, 19 , 0.2);
+}
+.tab:hover{
+	background: rgba( 149, 127, 67, 0.8); 
+
+}
+.tab:hover{
+	background: rgba(45, 31, 31,  0.8); 
+	color: white;
+	cursor: pointer;
+}
+
+/* ||||||||||||||||||||||     BOTONES DEL INDEX              ||||||||||||||||||||||||||||||*/
+
+.boton_index{
+
+	background: #403A3E;
+	color: white; /* de las letras */
+	padding: 15px 25px; /*10 hacia arriba y 20 hacia los costados*/
+	margin: 5px;
+	cursor: pointer; /*El puntero se cambia a una mano */
+	border: none;
+	display: inline-block;
+	box-shadow: 0px 6px 0px rgba(173, 95, 1,0.8);
+	border-radius: 20% ;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	float: left; /* posiciono el boton de volver al lado del de listo */
+
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.boton_index:hover{
+	box-shadow: 0px 3px 0px rgba(95, 94, 94,0.8);
+  	-moz-opacity: .50;
+  	filter:alpha (opacity=50);
+  	/*opacity: 0.80;*/
+  	/*text-transform: uppercase;*/
+
+  	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	transform:scale(1.10);
+}
+
+input[type="submit"]:active{
+	transform:scale(0.95);
+}
+
+
+
+/* ||||||||||||||||||||||     BOTONES HIPERVINCULOS           ||||||||||||||||||||||||||||||*/
+
+.eliminar, .modificar{
+	font-size: 17px;	
+	text-decoration: none;
+	margin: 5px 0px; 
+	padding: 5px 20px 5px 20px; /*arriba y abajo , y a los lados*/
+	display: inline-block;
+	box-shadow: 0px 5px 2px  #1d2513;
+	cursor: pointer;
+	border: none;
+	color: black;
+	border-radius: 40px ;
+	line-height: 25px; /*representa la altura de las cajas de texto*/
+	border-bottom-width: 2px;
+
+}
+
+.eliminar{
+	background-color: rgba( 216, 82, 58 ,0.9 );
+
+}
+
+.eliminar:hover{
+	background: #DC4260;
+	box-shadow: 0px 2px 0px  black;
+
+  	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	transform:scale(1.10);
+
+}
+
+.eliminar:active{
+	box-shadow: none;
+	transform:scale(0.95);
+	border-bottom-width: 1px;
+	line-height: 35px;
+}
+
+
+.modificar{
+	background-color: rgba(111, 216, 80, 0.9  );
+}
+
+.modificar:hover{
+	background: #0EE35C;
+	box-shadow: 0px 2px 0px  black;
+
+  	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	transform:scale(1.10);
+	
+}	
+
+.modificar:active{
+	box-shadow: none;
+	transform:scale(0.95);
+	border-bottom-width: 1px;
+	line-height: 35px;
+}
+
+/* ||||||||||||||||||||||    FIN  BOTONES HIPERVINCULOS           ||||||||||||||||||||||||||||||*/

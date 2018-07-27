@@ -1,0 +1,87 @@
+html,body,.full-height{
+    height: 100%;
+}
+
+body{
+    
+    background: url(img/reserva.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+}
+
+.full-height{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bienvenido{
+    background: #ecf0f1;
+}
+
+
+.alerta{
+    position: absolute;
+    width: 80%;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: auto;
+}
+
+.form{
+    width: 300px;
+    height: 320px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.8); /* 0 0 en el desplazamiento, 20px en el difuminado,
+     expansion de un 1px, para que no sea todo negro le ponemos una tansparencia de rgba*/
+    position: relative;
+    background: rgba(0,0,0,0.8);
+
+    box-sizing: border-box;
+
+
+}
+
+input[type="submit"]:active{
+    transform:scale(0.95);
+}
+
+.btn_volver{
+    background: #403A3E;
+    color: white; /* de las letras */
+    padding: 15px 25px; /*10 hacia arriba y 20 hacia los costados*/
+    margin: 5px;
+    cursor: pointer; /*El puntero se cambia a una mano */
+    border: none;
+    display: inline-block;
+    box-shadow: 0px 6px 0px rgba(173, 95, 1,0.8);
+    border-radius: 20% ;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    /*text-transform: uppercase; para hacer mayusculas las letras */
+    float: left; /* posiciono el boton de volver al lado del de listo */
+
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+
+.btn_volver:hover{
+    box-shadow: 0px 3px 0px rgba(95, 94, 94,0.8);
+    -moz-opacity: .50;
+    filter:alpha (opacity=50);
+    /*opacity: 0.80;*/
+    
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    transform:scale(1.10);   
+
+
+}

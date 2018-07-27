@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+	
+}
+
+body {
+	font-family: sans-serif;
+	margin: 0px;
+	padding: 0px;
+	background: url(imagenes/reserva1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position:center;
+}
+
+
+
+
+/* ESTILOS PARA EL FORMULARIO DE RESERVA */
+
+.formulario_titulo{
+	text-align: center;
+	margin-top: 0px;
+	color: #E3D9D9;
+	
+}
+
+.f_input, .f_label, .f_submit{
+
+	display: block;
+	width: 100%;
+	font-size: 1.3em;
+
+}
+
+.f_input{
+	padding: 20px;
+	background: rgba(196, 224, 67 ,0.4);
+	border:1px solid rgba(0,0,0,0.3);
+	margin-bottom: 40px;
+}
+
+.f_input:focus{
+	outline: 1px solid rgb(45, 245, 188, 0.4) /*color del borde del cuadro de texto */
+}
+
+.f_input:focus + .f_label{
+  margin-top:-130px;
+
+} /*El selector + es un selector del hermano del elemento que sigue */
+
+.f_label{
+	padding-left: 15px;
+	position: absolute;
+	margin-top: -85px;
+	z-index: -10; /* para mandar la letra atras del label o traer al frente */
+	color: white ; /* color del texto interno del cuadro de texto */
+	transition: all 0.2s;
+	font-weight:normal; /* grosor de la letra interna */
+}
+
+.boton_inicio{
+
+	background: #403A3E;
+	color: white; /* de las letras */
+	padding: 15px 25px; /*10 hacia arriba y 20 hacia los costados*/
+	margin: 5px;
+	cursor: pointer; /*El puntero se cambia a una mano */
+	border: none;
+	display: inline-block;
+	box-shadow: 0px 6px 0px rgba(173, 95, 1,0.8);
+	border-radius: 20% ;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	float: left; /* posiciono el boton de volver al lado del de listo */
+
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.boton_inicio:hover{
+	box-shadow: 0px 3px 0px rgba(95, 94, 94,0.8);
+  	-moz-opacity: .50;
+  	filter:alpha (opacity=50);
+  	/*opacity: 0.80;*/
+  	/*text-transform: uppercase;*/
+
+  	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	transform:scale(1.10);
+}
+
+input[type="submit"]:active{
+	transform:scale(0.95);
+}
+
+.form{
+
+	width: 350px;
+	height: 740px;
+	max-width: 100%;
+	margin: auto;
+	margin-top: 100px;
+	padding: 20px;
+	box-shadow: 0 0 20px 1px rgba(0,0,0,0.8); /* 0 0 en el desplazamiento, 20px en el difuminado,
+	 expansion de un 1px, para que no sea todo negro le ponemos una tansparencia de rgba*/
+	position: relative;
+	background: rgba(0,0,0,0.8);
+
+	box-sizing: border-box;
+
+
+}
+
+
+.user{
+
+	width: 110px;
+	height: 110px;
+	margin-top: -5px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: calc(-170px/2);
+	left: calc(50% - 55px);
+}
